@@ -1,0 +1,17 @@
+.menu-box {
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.main-title {
+    font-size: 100px;
+}
+
+.page-button {
+    background-color: #75DB81 !important;
+    border-radius: 100px !important;
+}
