@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #98E7A1;">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,16 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>My Website</title>
 </head>
 
-<body style="background-color: #98E7A1;">
+<body id="index" style="background-color: #98E7A1;">
 
     <div class="z-1 position-absolute top-0 start-0"><img src="../Images/green-squares.png" class="ms-3 mt-3"></div>
 
@@ -27,24 +30,16 @@
         <p class="subtitle fs-3 text-center mb-4">Welcome to my website!</p>
 
         <div class="d-grid gap-4 col-6 mx-auto">
-            <button class="btn page-button fs-4 fw-semibold" type="button"><a href="#page-1">Page 1</a></button>
-            <button class="btn page-button fs-4 fw-semibold" type="button"><a>Page 1</a></button>
-            <button class="btn page-button fs-4 fw-semibold" type="button"><a>Page 1</a></button>
-            <button class="btn page-button fs-4 fw-semibold" type="button"><a>Page 1</a></button>
+            <button class="btn page-button fs-4 fw-semibold" id="page1" onclick="fadeOutIn(this.id)" type="button">Page 1</button>
+            <button class="btn page-button fs-4 fw-semibold" id="page2" onclick="fadeOutIn(this.id)" type="button">Page 2</button>
+            <button class="btn page-button fs-4 fw-semibold" id="page3" onclick="fadeOutIn(this.id)" type="button">Page 3</button>
+            <button class="btn page-button fs-4 fw-semibold" id="page4" onclick="fadeOutIn(this.id)" type="button">Page 4</button>
         </div>
     </div>
 
     <div class="z-1 position-absolute bottom-0 end-0"><img src="../Images/green-squares-reversed.png" class="me-3 mb-3">
     </div>
-
-    
-
-    <script>
-        $(document).ready(function () {
-            $("#page-1").load("page-1.html");
-
-        });
-    </script>
 </body>
+<script src="/green-website/JavaScript/fading.js"></script>
 
 </html>
