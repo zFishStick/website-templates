@@ -1,26 +1,26 @@
 function fadeOutIn(id) {
+    var pageUrl
 
-    if(id == "tohome-button"){
-        var pageUrl = "index.html";
+    switch (id) {
+        case "tohome-button":
+            pageUrl = "index.html";
+            break;
+        case "page1":
+            pageUrl = "page-1.html";
+        default:
+            break;
     }
-    else{
-        pageUrl = "page-1.html";
-    }
-    
-    $("#index").fadeOut(500, function() {
-        // Aggiorna l'URL senza ricaricare la pagina
+
+    $("#index").fadeOut(500, function () {
         history.pushState(null, null, pageUrl);
 
-        // Carica il contenuto della nuova pagina
-        $("#index").load(pageUrl, function() {
+        $("#index").load(pageUrl, function () {
             $("#index").fadeIn(500);
         });
     });
 
-    // Gestisci il caso in cui l'utente ricarica la pagina o naviga indietro/avanti
     $(window).on('popstate', function () {
-        location.reload(); // Ricarica la pagina attuale se l'utente usa il pulsante indietro
+        location.reload();
     });
 }
 
-// I bottoni chiameranno questa funzione quando vengono cliccati
