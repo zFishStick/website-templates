@@ -20,7 +20,7 @@ var chartsContainer = document.getElementById('charts-container');
 for (var i = 0; i < chartData.length; i++) {
     // Crea un elemento canvas per ogni grafico
     var canvasContainer = document.createElement('div');
-    canvasContainer.classList.add('chart-container');
+    canvasContainer.classList.add('chart-container', 'mx-5', 'mt-3');
 
     // Crea un elemento h3 per il titolo
     var title = document.createElement('h3');

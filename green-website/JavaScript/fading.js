@@ -7,6 +7,8 @@ function fadeOutIn(id) {
             break;
         case "page1":
             pageUrl = "page-1.html";
+        case "page2":
+            pageUrl = "page-2.html";
         default:
             break;
     }
