@@ -1,0 +1,45 @@
+/* On screens that are 844px wide or less */
+@media screen and (max-width: 844px) {
+    .squares {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .page-button {
+        font-size: 2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 993px) {
+
+    .nav-menu{
+        flex-wrap: nowrap !important;
+        flex-direction: column;
+    }
+
+    .main-title {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+
+    .first-item {
+        border-start-start-radius: 17px;
+        border-end-start-radius: 17px;
+    }
+
+    .nav-item {
+        width: 150px;
+    }
+
+}

@@ -24,7 +24,7 @@ for (var i = 0; i < chartData.length; i++) {
 
     // Crea un elemento h3 per il titolo
     var title = document.createElement('h3');
-    title.classList.add('chart-label');
+    title.classList.add('chart-label', 'text-center');
     title.innerText = "Skill " + i;
     canvasContainer.appendChild(title);
 

@@ -25,7 +25,7 @@
 <body id="index" style="background-color: #98E7A1;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid nav-box">
-            <button class="navbar-brand main-title px-4">Page-2</button>
+            <button class="navbar-brand main-title px-4">Page-3</button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -35,34 +35,12 @@
                         <button class="nav-link" id="page1" onclick="fadeOutIn(this.id)">Page-1</button>
                     </li>
                     <li class="nav-item last-item">
-                        <button class="nav-link" id="page3" onclick="fadeOutIn(this.id)">Page-3</button>
+                        <button class="nav-link" id="page2" onclick="fadeOutIn(this.id)">Page-2</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <div class="row gx-5">
-            <div class="col px-0">
-                <div id="rectangle"></div>
-            </div>
-            <div class="col px-0 text">
-                <div class="fs-2">Text</div>
-                <div class="fs-4">Subtitle</div>
-            </div>
-            <div class="col px-0">
-                <div id="rectangle"></div>
-            </div>
-            <div class="col px-0 text">
-                <div class="fs-2">Text</div>
-                <div class="fs-4">Subtitle</div>
-            </div>
-        </div>
-    </div>
-
-
-
     <script src="/JavaScript/fading.js"></script>
 </body>
 <style>
@@ -96,16 +74,19 @@
         border-start-end-radius: 17px;
     }
 
-    #rectangle {
-        width: 1.2vw;
-        height: 35vw;
-        background: #75DB81;
+    .image-paragraph {
+        margin-top: 20px;
     }
 
-    .text{
-        margin-right: 29.5rem ;
+    .image-paragraph p {
+        font-size: 30px;
     }
 
+    .chart-label {
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
 </style>
 
 </html>
