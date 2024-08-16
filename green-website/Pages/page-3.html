@@ -41,7 +41,16 @@
             </div>
         </div>
     </nav>
-    <script src="/JavaScript/fading.js"></script>
+
+    <div class="container mt-3">
+        <p class="p-contact mb-2 text-center">Contact me on</p>
+        <div id="rectangle" class="mx-auto row">
+            <div class="col" id="col1"></div>
+            <div class="col" id="col2"></div>
+        </div>
+
+        <script src="../JavaScript/social-networks.js"></script>
+        <script src="../JavaScript/fading.js"></script>
 </body>
 <style>
     .navbar-brand {
@@ -74,18 +83,29 @@
         border-start-end-radius: 17px;
     }
 
-    .image-paragraph {
-        margin-top: 20px;
+    #rectangle {
+        width: 60%;
+        height: 100%;
+        background: #75DB81;
+        border-radius: 10px;
     }
 
-    .image-paragraph p {
-        font-size: 30px;
+    .p-contact {
+        font-size: 2rem;
     }
 
-    .chart-label {
-        text-align: center;
-        margin-bottom: 0;
-        font-size: 20px;
+    #icon {
+        width: 5vw !important;
+        height: 5vw;
+        background: #6BCD76;
+        border-radius: 5px;
+    }
+
+    .social-name {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        font-size: 2vw;
     }
 </style>
 
