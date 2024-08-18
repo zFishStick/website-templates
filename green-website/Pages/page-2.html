@@ -12,23 +12,22 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- Chart js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../Css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/responsive_style.css" />
 
     <title>Page 2</title>
 
 </head>
 
 <body id="index" style="background-color: #98E7A1;">
+
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid nav-box">
-            <button class="navbar-brand main-title px-4">Page-2</button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container-fluid nav-menu">
+            <a class="navbar-brand main-title px-4">Page-2</a>
+            <div class="navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item first-item">
                         <button class="nav-link" id="tohome-button" onclick="fadeOutIn(this.id)">Home</button>
                     </li>
                     <li class="nav-item">
@@ -42,59 +41,24 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row gx-5">
-            <div class="col px-0">
+    <div class="container main-box">
+        <div class="row" id="main-row">
+            <div class="col shape-text" id="first-col">
                 <div id="rectangle"></div>
+                <div id="text" class="ms-2"></div>
             </div>
-            <div class="col px-0 text">
-                <div class="fs-2">Text</div>
-                <div class="fs-4">Subtitle</div>
-            </div>
-            <div class="col px-0">
+            <div class="col shape-text" id="second-col">
                 <div id="rectangle"></div>
-            </div>
-            <div class="col px-0 text">
-                <div class="fs-2">Text</div>
-                <div class="fs-4">Subtitle</div>
+                <div id="text2" class="ms-2"></div>
             </div>
         </div>
     </div>
 
 
-
+    <script src="/JavaScript/formation-boxes.js"></script>
     <script src="/JavaScript/fading.js"></script>
 </body>
 <style>
-    .navbar-brand {
-        background-color: #6BCD76;
-        border-radius: 17px;
-        border-color: transparent;
-    }
-
-    .nav-box {
-        width: fit-content;
-    }
-
-    .main-title {
-        font-size: 40px;
-        margin-right: 0;
-    }
-
-    .nav-item {
-        background-color: #75DB81;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .nav-item button {
-        font-size: 20px;
-    }
-
-    .last-item {
-        border-end-end-radius: 17px;
-        border-start-end-radius: 17px;
-    }
 
     #rectangle {
         width: 1.2vw;
@@ -102,10 +66,19 @@
         background: #75DB81;
     }
 
-    .text{
-        margin-right: 29.5rem ;
+    .shape-text{
+        display: flex;
+        width: 50rem !important;
+        justify-content: center;
     }
 
+    .title{
+        font-size: 35px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
 </style>
 
 </html>

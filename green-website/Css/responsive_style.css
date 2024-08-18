@@ -5,24 +5,25 @@
     }
 
     .main-title {
-        font-size: 6rem;
+        font-size: 3rem;
     }
 
     .subtitle {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     .page-button {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
 }
 
 @media screen and (max-width: 993px) {
 
-    .nav-menu{
+    .nav-menu {
         flex-wrap: nowrap !important;
         flex-direction: column;
+        padding: 0 !important;
     }
 
     .main-title {
@@ -39,7 +40,35 @@
     }
 
     .nav-item {
-        width: 150px;
+        width: 122px;
     }
 
+    #main-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rectangle {
+        height: 22rem !important;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    #social-box {
+        width: 300px !important;
+        background: #75DB81;
+        border-radius: 10px;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .sn-container{
+        margin-bottom: 20px !important;
+    }
 }
